@@ -99,6 +99,13 @@ export default {
 }
 ```
 
+## Comparisong to [redux-watch](http://github.com/jprichardson/redux-watch)
+
+redux-watch is a similar redux-related utility, but with two important differences:
+
+  * Performance. The most natural ways to use redux-watch in your components would create one watcher for each component instance. This scales very poorly as your component tree grows large. redux-subscribe maintains a map of all current subscriptions, so only has to lookup the values and compare them once per *unique* subscription, which scales very well in most applications.
+  * redux-subscribe is a middleware whereas redux-watch wraps your store. This allows redux-subscribe to sit in the middle and setup/teardown subscriptions in response to actions, which lets you keep everything pure and internal to redux.
+
 ## Performance
 
 The performance of redux-subscribe is proportional to the number of unique paths that are subscribed to. This means that it scales very well, provided you aren't subscribing to lots (as in hundreds or thousands) of *different* things. Each time the state updates, each unique path that has been subscribed to is checked for a change, if it has been changed, the listeners are called and their results dispatched.

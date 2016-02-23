@@ -9,8 +9,8 @@ import getProp from '@f/get-prop'
  * Action types
  */
 
-const SUBSCRIBE = '@@SUBSCRIBE/subscribe'
-const UNSUBSCRIBE = '@@UNSUBSCRIBE/unsubscribe'
+const SUBSCRIBE = '@@redux-subscribe/subscribe'
+const UNSUBSCRIBE = '@@redux-subscribe/unsubscribe'
 
 /**
  * redux-subscribe

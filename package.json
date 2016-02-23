@@ -1,5 +1,5 @@
 {
-  "name": "@ashaffer/redux-subscribe",
+  "name": "redux-subscribe",
   "description": "Subscribe to path in your redux state atom",
   "repository": "git://github.com/ashaffer/redux-subscribe.git",
   "version": "1.0.0",

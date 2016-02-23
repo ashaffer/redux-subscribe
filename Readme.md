@@ -99,6 +99,10 @@ export default {
 }
 ```
 
+## Performance
+
+The performance of redux-subscribe is proportional to the number of unique paths that are subscribed to. This means that it scales very well, provided you aren't subscribing to lots (as in hundreds or thousands) of *different* things. Each time the state updates, each unique path that has been subscribed to is checked for a change, if it has been changed, the listeners are called and their results dispatched.
+
 ## License
 
 MIT

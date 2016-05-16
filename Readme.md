@@ -99,7 +99,7 @@ export default {
 }
 ```
 
-## Comparisong to [redux-watch](http://github.com/jprichardson/redux-watch)
+## Comparison to [redux-watch](http://github.com/jprichardson/redux-watch)
 
 redux-watch is a similar redux-related utility, but with two important differences:
 
